@@ -1,9 +1,7 @@
 //1. assoc
 
-function assoc(k, v, obj) { 
-  let temp = {...obj};
-  temp[k] = v;
-  return temp;
+function assoc(k, v, obj) {
+	return{...obj,[k]: v};
 }
 
 assoc("b", "B", {a: "A"})  // {a: "A", b: "B"}
